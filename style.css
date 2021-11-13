@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #ddd;
+    min-height: 8vh;
+}
+.icon a img{
+    width: 30px;
+}
+.nav-link{
+   display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    
+}
+.nav-link li{
+    margin: 0 30px;
+}
+.nav-link li a{
+    text-decoration: none;
+}
+.burger div{
+    width: 20px;
+    height: 2px;
+    background: #000;
+    margin: 4px;
+    display: none;
+    
+}
+.dics{
+    width: 100vw;
+    height: 92vh;
+    background-image: url(./HD-wallpaper-la-casa-de-papel-netflix-series-berlin-money-heist-artwork-movies.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width:1024px){
+    .nav-link{
+        width: 60%;
+    }
+        
+    }
+    @media screen and (max-width:768px) {
+        body{
+            overflow-X: hidden ;
+        
+        }
+        .nav-link li{
+         margin: 40px 0;
+         opacity: 0;
+          
+            } 
+            .dics{
+                display: none;
+                height: 0;
+                width: 0;
+            }
+            .bgs2{
+                display: block;
+            }
+            .dic{
+                width: 100vw;
+                height: 92vh;
+                background-image: url(./soumik-choudhury-berlin.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            /* nav start*/
+       
+           
+            .nav-link{
+                position: absolute;
+                right: 0;
+                height:92vh ;
+                top: 8vh;
+                width: 50%;
+                background: #ddd;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transform: translateX(100%);
+                transition: transform .5s ease-in;
+               
+                
+            }
+            .burger div{
+                display: block;
+            }
+            .nav-active{
+                transform: translateX(0);
+            }
+          
+    }
+
+
